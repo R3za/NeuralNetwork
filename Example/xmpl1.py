@@ -30,7 +30,7 @@ Y_nn=ann.feedforward(X_test)
 print 'before training:', loss.get_accuracy(Y_test,y_nn=Y_nn)
 
 test_period=10
-lists=trainer.trian(data_set=data_set,num_epoch=1,mini_batch_size=150,train_accuracy_report_period=test_period,
+lists=trainer.trian(data_set=data_set,num_epoch=100,mini_batch_size=150,train_accuracy_report_period=test_period,
                     test_accuracy_report_period=test_period,valid_accuracy_report_period=test_period)
 
 X_test,Y_test=data_set.get_test_data()
